@@ -1,0 +1,144 @@
+@font-face {
+  font-family: "Cyrene";
+  src: url(../fonts/CyreneRegularAdvanced.woff), url(../fonts/CyreneRegularAdvanced.woff2);
+}
+@font-face {
+  font-family: "Chillax Variable";
+  src: url(../fonts/Chillax-Variable.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Chillax Variable";
+  background-color: #111111;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.container {
+  max-width: 1700px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.name {
+  font-family: "Cyrene";
+  position: sticky;
+  top: 35px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  opacity: 0.2;
+}
+
+.swiper-button-prev {
+  transform: scale(-1, 1);
+  left: 74%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  max-width: 72px;
+  width: 100%;
+  top: 97.4%;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  content: none;
+}
+
+.swiper-pagination {
+  left: 85%;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+}
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+.header__btn, .header__lang a {
+  font-size: 25px;
+  color: #fff;
+  text-transform: lowercase;
+  text-decoration: none;
+}
+
+.top {
+  position: relative;
+  height: 100vh;
+  background-image: url(../img/top-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.top .container {
+  height: 100%;
+}
+.top__inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.top__title {
+  font-family: "Cyrene";
+  font-size: 250px;
+  font-weight: 400 !important;
+  margin: 0;
+  line-height: 1;
+}
+.top__subtitle {
+  font-size: 30px;
+  line-height: 1;
+}
+
+.slider {
+  height: 100vh;
+  padding: 80px 0;
+}
+.slider .container {
+  height: 100%;
+}
+.slider__inner {
+  height: 100%;
+  max-width: 1190px;
+  margin: 0 auto;
+}
+
+.progect__title {
+  font-family: "Chillax Variable";
+  font-size: 72px;
+  font-weight: 400 !important;
+  position: relative;
+  top: 40px;
+  z-index: 50;
+}
+.progect-slider {
+  max-width: 1005px;
+  padding-bottom: 50px;
+}
+.progect-slider .swiper-slide {
+  max-height: 635px;
+}/*# sourceMappingURL=style.css.map */
