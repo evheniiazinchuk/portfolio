@@ -54,7 +54,7 @@ function goToSection(i) {
 panels.forEach((panel, i) => {
   ScrollTrigger.create({
     trigger: panel,
-    markers: true,
+    // markers: true,
     start: "top bottom",
     end: "+=100%",
     onToggle: self => self.isActive && !scrollTween && goToSection(i)
