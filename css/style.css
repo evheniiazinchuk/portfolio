@@ -82,6 +82,10 @@ body {
   color: #fff;
   text-transform: lowercase;
   text-decoration: none;
+  transition: all 0.3s;
+}
+.header a:hover {
+  color: #DDB4F2;
 }
 
 .top {
