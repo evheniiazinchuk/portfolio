@@ -67,3 +67,18 @@ ScrollTrigger.create({
   end: "max",
   snap: 1 / (panels.length - 1)
 })
+
+
+
+
+// popup
+const popup = document.querySelector('.popup');
+const popupBtn = document.querySelector('.popup__btn');
+const popupClose = document.querySelector('.popup__close');
+
+popupBtn.addEventListener('click', function() {
+  popup.classList.remove('close');
+})
+popupClose.addEventListener('click', function() {
+  popup.classList.add('close');
+})
