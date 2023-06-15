@@ -53,6 +53,10 @@ body {
   width: 100%;
   top: 97.4%;
 }
+.swiper-button-prev img,
+.swiper-button-next img {
+  width: 100%;
+}
 
 .swiper-button-next:after, .swiper-button-prev:after {
   content: none;
@@ -173,6 +177,12 @@ body {
 }
 .slider:nth-child(8) .slider__num {
   top: 88%;
+}
+.slider .swiper-slide img {
+  height: 100%;
+  max-height: inherit;
+  margin: 0 auto;
+  display: block;
 }
 
 .progect__title {

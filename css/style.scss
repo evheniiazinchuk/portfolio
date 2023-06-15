@@ -49,6 +49,9 @@ body {
     max-width: 72px;
     width: 100%;
     top: 97.4%;
+    & img {
+        width: 100%;
+    }
 }
 .swiper-button-next:after, .swiper-button-prev:after {
     content: none;
@@ -166,6 +169,12 @@ body {
     }
     &:nth-child(8) .slider__num {
         top: 88%;
+    }
+    & .swiper-slide img {
+        height: 100%;
+        max-height: inherit;
+        margin: 0 auto;
+        display: block;
     }
 }
 .progect {
