@@ -6,10 +6,10 @@ const progectSlider = new Swiper('.progect-slider', {
       clickable: true,
       type: "fraction",
     },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    }
+    // navigation: {
+    //     nextEl: '.swiper-button-next',
+    //     prevEl: '.swiper-button-prev',
+    // }
   });
 
 // скролл наверх

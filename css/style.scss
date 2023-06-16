@@ -38,7 +38,9 @@ body {
     text-decoration: none;
     font-size: 25px;
     color: #fff;
-    opacity: 0.2;
+    opacity: 0.6;
+    letter-spacing: 0.12em;
+    z-index: 10;
 }
 .swiper-button-prev {
     transform: scale(-1, 1);
@@ -57,8 +59,40 @@ body {
     content: none;
 }
 .swiper-pagination {
-    left: 85%;
-    width: fit-content;
+    left: 0;
+    width: 100%;
+}
+.animated__arrow {
+    position: relative;
+    height: 76px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+    position: absolute;
+    bottom: 5%;
+    animation: bounce .8s ease infinite alternate;
+    &::after {
+        position: absolute;
+        content: '';
+        width: 40px;
+        height: 40px;
+        border: 1px dashed #fff;
+        border-radius: 50%;
+        bottom: 0;
+        left: -1px;
+    }
+    & img {
+        transform: rotate(90deg);
+        width: 60px;
+        opacity: 0.7;
+    }
+}
+@keyframes bounce {
+    100% {
+      transform:translateY(-20px);
+    }
 }
 .header {
     position: absolute;
@@ -72,6 +106,10 @@ body {
         justify-content: space-between;
         padding: 40px 0;
     }
+    &__lang span {
+        display: inline-block;
+        margin: 0 10px;
+    }
     &__btn,
     &__lang a {
         font-size: 25px;
@@ -79,6 +117,20 @@ body {
         text-transform: lowercase;
         text-decoration: none;
         transition: all .3s;
+        position: relative;
+        &.active {
+            &::after {
+                position: absolute;
+                content: '';
+                top: 100%;
+                left: 0;
+                right: 0;
+                height: 1px;
+                width: 75%;
+                margin: 0 auto;
+                background-color: #fff;
+            }
+        }
     }
     & a:hover {
         color: #DDB4F2;
@@ -113,11 +165,13 @@ body {
     &__subtitle {
         font-size: 30px;
         line-height: 1;
+        margin-bottom: 80px;
     }
 }
 .slider {
     height: 100vh;
     padding: 80px 0;
+    position: relative;
     & .container {
         height: 100%;
     }
@@ -126,49 +180,14 @@ body {
         max-width: 1190px;
         margin: 0 auto;
         position: relative;
-        border-right: 2px solid rgba(217, 217, 217, 0.1);
     }
     &__num {
-        font-family: 'Cyrene';
         position: absolute;
-        right: -45px;
-        top: 1%;
-        display: flex;
-        flex-direction: column;
-        width: 90px;
-        height: 90px;
-        background: #111;
-        align-items: center;
-        justify-content: center;
-        padding: 25px;
-        & span:first-child {
-            align-self: flex-start;
-            position: relative;
-            top: 10px;
-        }
-        & span:last-child {
-            align-self: flex-end;
-            position: relative;
-            top: -10px;
-        }
-    }
-    &:nth-child(3) .slider__num {
-        top: 12%;
-    }
-    &:nth-child(4) .slider__num {
-        top: 27%;
-    }
-    &:nth-child(5) .slider__num {
-        top: 40%;
-    }
-    &:nth-child(6) .slider__num {
-        top: 52%;
-    }
-    &:nth-child(7) .slider__num {
-        top: 68%;
-    }
-    &:nth-child(8) .slider__num {
-        top: 88%;
+        right: 1%;
+        bottom: 0;
+        font-family: 'Chillax Variable';
+        font-size: 250px;
+        color: rgba($color: #fff, $alpha: .03);
     }
     & .swiper-slide img {
         height: 100%;
@@ -201,7 +220,7 @@ body {
         position: absolute;
         left: 50%;
         bottom: 18%;
-        transform: translateX(-60%);
+        transform: translateX(-50%);
         color: #fff;
         & span {
             text-decoration: underline;
@@ -278,9 +297,8 @@ body {
         margin: auto auto 0;
         cursor: pointer;
         & span {
-            position: relative;
-            top: -2px;
             opacity: .4;
+            font-size: 12px;
         }
     }
 }
