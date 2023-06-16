@@ -63,4 +63,43 @@
     margin: 0 0 35px;
     max-width: 360px;
   }
+  .progect__title {
+    font-size: 27px;
+    top: 15px;
+    left: 30px;
+  }
+  .progect-slider .swiper-slide {
+    max-height: 240px;
+  }
+  .progect-slider {
+    max-width: 415px;
+    padding-bottom: 40px;
+  }
+  .swiper-button-prev, .swiper-button-next {
+    max-width: 30px;
+    top: 94.4%;
+  }
+  .swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: 0;
+  }
+  .swiper-pagination-fraction {
+    font-size: 12px;
+  }
+  .slider__inner {
+    max-width: 500px;
+  }
+  .slider .container {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .slider {
+    padding: 20px 0;
+  }
+  .slider__num {
+    right: -25px;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=media.css.map */
