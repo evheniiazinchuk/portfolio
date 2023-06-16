@@ -103,4 +103,19 @@
         padding: 10px;
         font-size: 12px;
     }
+    .progect__link {
+        font-size: 15px;
+        transform: translateX(-50%);
+    }
+    .popup__close {
+        width: 30px;
+        height: 30px;
+    }
+    .popup__close span {
+        top: 0px;
+        font-size: 12px;
+    }
+    .popup__links a {
+        font-size: 14px;
+    }
 }
