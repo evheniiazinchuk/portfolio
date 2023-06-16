@@ -34,4 +34,33 @@
     height: 70px;
     padding: 15px;
   }
+}
+@media screen and (max-width: 992px) {
+  body {
+    scroll-behavior: smooth;
+  }
+  .container {
+    max-width: 615px;
+  }
+  .top__title {
+    font-size: 93px;
+  }
+  .top__subtitle {
+    font-size: 16px;
+  }
+  .header__btn, .header__lang a {
+    font-size: 16px;
+  }
+  .popup__content {
+    padding: 20px 20px 10px;
+  }
+  .popup__title {
+    font-size: 22px;
+    margin: 60px 0 10px;
+  }
+  .popup__text {
+    font-size: 16px;
+    margin: 0 0 35px;
+    max-width: 360px;
+  }
 }/*# sourceMappingURL=media.css.map */

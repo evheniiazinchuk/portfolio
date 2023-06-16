@@ -23,6 +23,7 @@ function up() {
 	return false;
 }
 
+if( window.innerWidth > 992 ) {
 // плавный скролл секций
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
@@ -67,7 +68,7 @@ ScrollTrigger.create({
   end: "max",
   snap: 1 / (panels.length - 1)
 })
-
+}
 
 
 
