@@ -72,9 +72,6 @@ body {
     padding-bottom: 15px;
     position: absolute;
     bottom: 5%;
-    &.sl::after {
-        content: none;
-    }
     &::after {
         position: absolute;
         content: '';
@@ -190,7 +187,7 @@ body {
         bottom: 0;
         font-family: 'Chillax Variable';
         font-size: 250px;
-        color: rgba($color: #fff, $alpha: .03);
+        color: rgba($color: #fff, $alpha: .02);
     }
     & .swiper-slide img {
         height: 100%;

@@ -80,9 +80,6 @@ body {
   position: absolute;
   bottom: 5%;
 }
-.animated__arrow.sl::after {
-  content: none;
-}
 .animated__arrow::after {
   position: absolute;
   content: "";
@@ -196,7 +193,7 @@ body {
   bottom: 0;
   font-family: "Chillax Variable";
   font-size: 250px;
-  color: rgba(255, 255, 255, 0.03);
+  color: rgba(255, 255, 255, 0.02);
 }
 .slider .swiper-slide img {
   height: 100%;
