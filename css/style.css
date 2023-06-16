@@ -79,7 +79,7 @@ body {
   padding-bottom: 15px;
   position: absolute;
   bottom: 5%;
-  animation: bounce 0.8s ease infinite alternate;
+  animation: bounce 1s ease infinite alternate;
 }
 .animated__arrow::after {
   position: absolute;
@@ -99,7 +99,7 @@ body {
 
 @keyframes bounce {
   100% {
-    transform: translateY(-20px);
+    transform: translateY(-10px);
   }
 }
 .header {
