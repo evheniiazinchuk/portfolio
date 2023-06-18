@@ -96,7 +96,7 @@ let nameTitle = document.querySelector('.name');
         start: "top 5%",
         end: "+=300",
         scrub: 1,
-                markers: true
+        // markers: true
       },
     })
     .fromTo(
