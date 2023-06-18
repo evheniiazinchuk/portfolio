@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollTrigger);
+
 const progectSlider = new Swiper('.progect-slider', {
     slidesPerView: 1,
     slidesPerGroup: 1,
@@ -83,3 +85,30 @@ popupBtn.addEventListener('click', function() {
 popupClose.addEventListener('click', function() {
   popup.classList.add('close');
 })
+
+
+// name animation
+let nameTitle = document.querySelector('.name');
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: nameTitle,
+        start: "top 5%",
+        end: "+=300",
+        scrub: 1,
+                markers: true
+      },
+    })
+    .fromTo(
+      nameTitle,
+      {
+        opacity: 0,
+        duration: 1,
+        ease: "power4.out",
+      },
+      {
+        opacity: 1,
+        duration: 1,
+        ease: "power4.out",
+      }
+    );
